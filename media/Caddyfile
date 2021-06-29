@@ -1,0 +1,23 @@
+# 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
+# 2. overwrite /etc/caddy/Caddyfile with this file
+# 3. sudo systemctl restart caddy
+
+#http://blog.gpt4.org {
+:80 {
+    root * /home/shawn/website
+    
+    file_server
+
+    @page not path /media/*
+    templates @page
+    rewrite @page /templates/index.html
+
+    encode gzip
+
+    handle_errors {
+        rewrite * /templates/error.html
+
+        file_server
+        templates
+    }
+}
