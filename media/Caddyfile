@@ -2,13 +2,11 @@
 
 # 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
 # 2. sudo systemctl stop caddy
-# 3. sudo env "PATH=$PATH" caddy run --environ --watch --config ./media/Caddyfile
+# 3. caddy run --environ --watch --config ./media/Caddyfile
 
 :31337 {
-    encode gzip
-
-    file_server
     templates
+    file_server
 
     @media {
         path /favicon.ico
@@ -36,8 +34,8 @@
     }
 
     handle_errors {
-        file_server
         templates
+        file_server
 
         @markdown_index_exists {
             file {path}/index.md
