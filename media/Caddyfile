@@ -5,7 +5,7 @@
 # 3. sudo caddy run -watch media/Caddyfile
 
 :80 {
-    root * /
+    root * .
     
     encode gzip
 
