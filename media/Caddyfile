@@ -28,7 +28,7 @@
         file_server
     }
     handle @markdown {
-        rewrite * /templates/index.html
+        redir * https://github.com/shawwn/website/blob/master{path}
     }
     handle @markdown_exists {
         map {path} {caddy_markdown_site.append_to_path} {
