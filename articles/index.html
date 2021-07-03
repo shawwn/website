@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{{ $dir := "/articles" }}
+{{ $title := "Articles" }}
+
+<html>
+<head>
+    <title>{{ $title }}</title>
+    <meta property="og:title" content="{{ $title }}">
+    <meta name="twitter:title" value="{{ $title }}">
+
+    {{ include "/templates/head.html" }}
+</head>
+<body>
+    {{ include "/templates/header.html" }}
+
+    <main>
+        <ul>
+            {{ range $i, $file := (listFiles $dir) }}
+                {{ $path := printf "%s/%s" $dir $file }}
+                {{ if eq ($path | ext) ".md" }}
+                    <li>
+                        {{ $markdown_file := (include $path | splitFrontMatter) }}
+                        <a href="{{ trimSuffix ".md" $file }}">{{ $markdown_file.Meta.title }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </main>
+
+    {{ include "/templates/footer.html" }}
+</body>
+</html>
