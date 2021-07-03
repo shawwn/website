@@ -1,8 +1,8 @@
 ---
-title: ML Mindshare Championship
+title: The ML Mindshare Championship
 ---
 
-### ML Mindshare Championship
+# The ML Mindshare Championship
 
 June 2021
 

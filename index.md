@@ -1,24 +1,20 @@
 ---
-title: Welcome!
+title: Blog
 ---
-# Hello!
 
-This is the index file.
+<br>
 
-* [Another page](/another)
+[@theshawwn](https://twitter.com/theshawwn) | [sillysaurusx](https://news.ycombinator.com/threads?id=sillysaurusx)
 
-# Website
+---
 
-I set up this website using [caddy](https://caddyserver.com/docs/) with [this Caddyfile](media/Caddyfile).
+# Articles
 
-The website automatically updates whenever I [edit it on github](https://github.com/shawwn/website/blob/master/index.md), which is so nice.
+[The ML Mindshare Championship](/mlmind)
+
+["How do I get started with JAX on TPU VMs?"](/jaxintro)
+
 
 # Misc
 
-Here's a cat on imgur:
-
-![cat](https://i.imgur.com/lnJNjXH.png)
-
-And a random image served locally:
-
-![Test image](media/dont-enter-mirror.jpg)
+[About This Site](/site)

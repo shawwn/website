@@ -79,31 +79,31 @@ body {
     }
     header,
     article {
-        margin-left: 15ch;
+        margin-left: 12ch;
         max-width: 540px;
     }
     @media only screen and (max-width: 120ch) {
         header,
         article {
-            margin-left: 14.5ch;
+            margin-left: 11.5ch;
         }
     }
     @media only screen and (max-width: 112ch) {
         header,
         article {
-            margin-left: 14ch;
+            margin-left: 11ch;
         }
     }
     @media only screen and (max-width: 104ch) {
         header,
         article {
-            margin-left: 13.5ch;
+            margin-left: 10.5ch;
         }
     }
     @media only screen and (max-width: 96ch) {
         header,
         article {
-            margin-left: 13ch;
+            margin-left: 10ch;
         }
     }
 }
@@ -806,7 +806,7 @@ section.collapse:target > .disclosure-button::before {
 
 /* HEADER H1-6 HIERARCHY */
 h1, h2, h3, h4, h5, h6 {
-    margin: 1.25em 0 0.5em -0.75rem;
+    margin: 1.25em 0 0.5em -0.50rem;
     font-weight: bold;
     position: relative;
 }
@@ -839,9 +839,11 @@ h6 code {
 
 h1 {
     font-feature-settings: 'smcp';
-    font-size: 1.75em;
+    font-size: 1.25em;
     line-height: 1.25;
     letter-spacing: -0.75px;
+    color: rgb(164,77,78);
+    margin-bottom: 1em;
 }
 section:not(.collapse) > h1:first-child {
     line-height: 1;
@@ -2111,7 +2113,7 @@ figcaption {
 
 blockquote {
     margin: 1.625em 0 1.75em 0;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     font-size: 0.95em;
     padding: 1em 1.25em;
 }
@@ -2229,6 +2231,7 @@ blockquote blockquote {
 
 /*  Interviews (e.g. https://www.gwern.net/Morning-writing#examples).
     */
+/*
 blockquote p > code:first-child,
 blockquote p > a:first-child code:first-child {
     border: none;
@@ -2238,6 +2241,7 @@ blockquote p > a:first-child code:first-child {
     padding: 0;
     font-size: inherit;
 }
+*/
 
 /*  Tables in blockquotes.
     */
@@ -2998,6 +3002,7 @@ code {
 pre {
     overflow: auto;
     margin: 1.75em auto;
+    padding: 0.75em;
     border: 1px solid #c8c8c8;
     background-color: #fafafa;
     cursor: text;
@@ -3184,11 +3189,23 @@ p.hang {
     font-size: 0.85em
 }
 
+/*
 hr {
     border: none;
     height: 0;
-    border-bottom: 1px solid #aaa;
-    margin: 1em 0;
+    border-bottom: 1px solid #e4dfdf;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 5%;
+}
+*/
+
+#markdownBody hr {
+    background-color: #e1e4e8;
+    border: 0;
+    height: .25em;
+    margin: 24px 0;
+    padding: 0;
 }
 
 /* hide the ad in the ad A/B test by default */

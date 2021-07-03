@@ -2,7 +2,9 @@
 title: "How do I get started with JAX on TPU VMs?"
 ---
 
-### "How do I get started with JAX on TPU VMs?"
+# "How do I get started with JAX on TPU VMs?"
+
+<section id="start">
 
 June 2021
 
@@ -288,3 +290,4 @@ The reason I showed up to [this Jax thread back in Feb 2020](https://github.com/
 At the time, I had no idea that the final answer in 2021 was gonna be "Sure! It's simple. And by the way, you can SSH into your TPUs. You can host a redis server, for example, using that 335GB RAM. By the way, throw in a few dozen other servers; the TPU has 96 CPU cores. Wanna see 96 CPU cores go brr? Build Tensorflow from source, and run `htop`, and It'll light up like a Christmas tree. It'll finish building in like, 20-30min too."
 
 Thanks for all the gradients, Jax team! And thank you for the incredible infrastructure, Cloud TPU team! Ya'll rock. TPU VMs are everything I've ever dreamed, and more.
+</section>

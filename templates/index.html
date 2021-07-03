@@ -22,11 +22,11 @@
     {{ include "/templates/header.html" }}
 
     <main>
-        <article>{{ markdown $markdownFile.Body }}</article>
+        <article id="markdownBody">{{ markdown $markdownFile.Body }}</article>
     </main>
 
     <footer>
-        <a href="{{ $path | clean }}">Page source code</a>.
+        <!-- <a href="{{ $path | clean }}">Page source code</a>. -->
     </footer>
 
     {{ include "/templates/footer.html" }}
