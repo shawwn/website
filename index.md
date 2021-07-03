@@ -12,7 +12,7 @@ title: Blog
 
 [The ML Mindshare Championship](/mlmind)
 
-["How do I get started with JAX on TPU VMs?"](/jaxintro)
+["How do I get started with JAX on TPU VMs?"](/jaxtpu)
 
 
 # Misc
