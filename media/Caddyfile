@@ -18,6 +18,7 @@
         path /media/*
     }
     @markdown {
+        file
         path_regexp \.md$
     }
     @markdown_exists {
