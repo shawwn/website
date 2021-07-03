@@ -1049,11 +1049,12 @@ article > :not(#TOC) a:hover,
     I got around this by adding in the Hakyll template an additional <div> just for the body of the Markdown content, excluding the TOC, and changing the Tufte CSS to target *that* instead.
     */
 article > :not(#TOC) a:link {
-    text-decoration: none;
-    background-image:
-        linear-gradient(#fff, #fff),
-        linear-gradient(#fff, #fff),
-        linear-gradient(#333, #333);
+    /* text-decoration: none; */
+    /* background-image: */
+    /*     linear-gradient(#fff, #fff), */
+    /*     linear-gradient(#fff, #fff), */
+    /*     linear-gradient(#333, #333); */
+    text-decoration: underline;
     background-size:
         0.05em 1px,
         0.05em 1px,
