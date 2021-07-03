@@ -25,7 +25,7 @@
     }
 
     handle @media {
-        file_server browse
+        file_server
     }
     handle @markdown {
         #redir * https://github.com/shawwn/website/blob/master{path}
