@@ -35,7 +35,7 @@
         file_server
     }
     handle @markdown {
-        redir * https://github.com/shawwn/website/blob/master{path}
+        redir * https://raw.githubusercontent.com/shawwn/website/master{path}
     }
     handle @markdown_exists {
         map {path} {caddy_markdown_site.append_to_path} {
