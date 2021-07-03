@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: blog.gpt4.org
 ---
 
 <br>
