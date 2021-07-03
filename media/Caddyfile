@@ -1,8 +1,24 @@
 # Based on https://github.com/dbohdan/caddy-markdown-site
 
-# 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
-# 2. sudo systemctl stop caddy
-# 3. caddy run --environ --watch --config ./media/Caddyfile
+# Initial setup
+#
+# first, install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
+# then run:
+#
+#   sudo apt install socat
+#   git clone https://github.com/shawwn/website ~/website -b dev
+
+# Running the server
+#
+# To run the server:
+#
+#   sudo systemctl stop caddy
+#   cd ~/website
+#   caddy run --environ --watch --config ./media/Caddyfile
+#
+# finally, switch to a different tmux pane. We're going to port forward localhost:31337 to 0.0.0.0:80:
+#
+#   sudo socat tcp-listen:80,reuseaddr,fork tcp:localhost:31337
 
 :31337 {
     templates
