@@ -6,7 +6,7 @@
 # 4. make sure /home/shawn/website is readable by anyone
 
 :80 {
-    root * /home/shawn/website
+    root * .
     
     encode gzip
 
