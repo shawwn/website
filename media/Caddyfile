@@ -23,6 +23,10 @@
         path /favicon.ico
         path /media/*
     }
+    @templates {
+        path /templates/*
+        not path /templates/*.css /templates/*.js
+    }
     @markdown {
         file
         path_regexp \.md$
@@ -33,6 +37,9 @@
 
     handle @media {
         file_server
+    }
+    handle @templates {
+        error 403
     }
     handle @markdown {
         redir * https://raw.githubusercontent.com/shawwn/website/master{path}
