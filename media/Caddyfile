@@ -4,9 +4,7 @@
 # 2. sudo systemctl stop caddy
 # 3. sudo env "PATH=$PATH" caddy run --environ --watch --config ./media/Caddyfile
 
-:31337 {
-    localhost
-    
+localhost:31337 {
     encode gzip
 
     file_server
