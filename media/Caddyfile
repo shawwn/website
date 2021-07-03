@@ -1,9 +1,11 @@
 # Based on https://github.com/dbohdan/caddy-markdown-site
 
+# - git clone https://github.com/shawwn/website ~/website
+# - cd ~/website
+
 # 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
-# 2. overwrite /etc/caddy/Caddyfile with this file
-# 3. sudo systemctl restart caddy
-# 4. make sure /home/shawn/website is readable by anyone
+# 2. sudo systemctl stop caddy
+# 3. sudo caddy run -watch
 
 :80 {
     root * .
