@@ -8,5 +8,5 @@ title: About This Site
 
 The [Caddyfile](media/Caddyfile) has setup instructions.
 
-You can add `.md` to the end of any url to see the [markdown]({{ .OriginalReq.URL.Path }}.md).
+You can add `.md` to the end of any url to see the [markdown](/index.md).
 
