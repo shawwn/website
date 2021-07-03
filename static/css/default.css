@@ -79,31 +79,31 @@ body {
     }
     header,
     article {
-        margin-left: 12ch;
+        margin-left: 14ch;
         max-width: 540px;
     }
     @media only screen and (max-width: 120ch) {
         header,
         article {
-            margin-left: 11.5ch;
+            margin-left: 13.5ch;
         }
     }
     @media only screen and (max-width: 112ch) {
         header,
         article {
-            margin-left: 11ch;
+            margin-left: 13ch;
         }
     }
     @media only screen and (max-width: 104ch) {
         header,
         article {
-            margin-left: 10.5ch;
+            margin-left: 12.5ch;
         }
     }
     @media only screen and (max-width: 96ch) {
         header,
         article {
-            margin-left: 10ch;
+            margin-left: 12ch;
         }
     }
 }

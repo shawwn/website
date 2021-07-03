@@ -4,7 +4,7 @@ title: The ML Mindshare Championship
 
 # The ML Mindshare Championship
 
-June 2021
+[June 2021]({{ .OriginalReq.URL.Path }}.md)
 
 Let me fire up a VM to simulate the popularity war for ML mindshare. *Puts on announcer hat*:
 

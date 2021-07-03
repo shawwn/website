@@ -6,7 +6,8 @@ title: "How do I get started with JAX on TPU VMs?"
 
 <section id="start">
 
-June 2021
+
+[June 2021]({{ .OriginalReq.URL.Path }}.md)
 
 *(I originally posted this as a [reply](https://github.com/google/jax/issues/2108#issuecomment-866238579) on the jax github tracker.)*
 
