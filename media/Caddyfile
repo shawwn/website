@@ -19,6 +19,8 @@
     file_server
     templates
 
+    redir / /index 302
+
     @media {
         path /favicon.ico
         path /media/*
