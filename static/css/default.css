@@ -4125,14 +4125,18 @@ body.bookreviews .tableWrapper#book-reviews-table td:last-of-type {
 
     figure img,
     figure video {
-        /* filter: invert(90%); */
+        filter: invert(90%);
     }
     #markdownBody img:hover {
-        /* filter: invert(90%) drop-shadow(0 0 3px #000); */
+        filter: invert(90%) drop-shadow(0 0 3px #000);
     }
 
     #image-focus-overlay,
     .image-wrapper::after {
-        /* filter: invert(90%); */
+        filter: invert(90%);
+    }
+
+    .no-invert {
+        filter: invert(90%);
     }
 }
