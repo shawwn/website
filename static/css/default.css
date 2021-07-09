@@ -2986,6 +2986,14 @@ p + p {
     p + p {
         text-indent: 1em;
     }
+
+    .list p + p {
+        text-indent: 0;
+    }
+
+    .list > p:first-child {
+        text-align: center;
+    }
 }
 
 /***************/
