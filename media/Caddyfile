@@ -3,9 +3,12 @@
 # - git clone https://github.com/shawwn/website ~/website
 # - cd ~/website
 
-# 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3
-# 2. sudo systemctl stop caddy
-# 3. sudo caddy run -watch
+# 1. install caddy_2.4.3_linux_amd64.deb from https://github.com/caddyserver/caddy/releases/tag/v2.4.3:
+# - wget https://github.com/caddyserver/caddy/releases/download/v2.4.3/caddy_2.4.3_linux_amd64.deb
+# - sudo dpkg -i caddy_2.4.3_linux_amd64.deb
+# 2. run the blog:
+# - sudo systemctl stop caddy
+# - sudo caddy run -watch
 
 # If you want automatic deployment, run this in a separate tmux pane:
 #
