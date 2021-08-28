@@ -1,5 +1,13 @@
+* twitter
+** Find the most liked tweets from an account
+   https://webapps.stackexchange.com/questions/105958/find-the-most-liked-tweet-from-an-account
+*** @theshawwn's most favorited tweets
+    https://twitter.com/search?q=from%3Atheshawwn%20min_faves%3A60&src=typed_query&f=live
+   
 * org mode
+** notes
 - Tutorial: https://orgmode.org/worg/org-tutorials/org4beginners.html
+  - Getting Things Done (GTD) workflow: http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
 - Auto-export on save: https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/
 ** `~/.emacs` configuration for org mode
    #+begin_src
@@ -36,5 +44,5 @@
 *** Insert a code block
     https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
 
-    `(require 'org-tempo)`, then `<s` followed by `TAB`.
+    
  
