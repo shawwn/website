@@ -1,50 +1,50 @@
 
 # Table of Contents
 
-1.  [twitter](#orgf68af1d)
-    1.  [Find the most liked tweets from an account](#orge998b58)
-        1.  [@theshawwn's most favorited tweets](#org3f6cb76)
-2.  [org mode](#org2ab0d9d)
-    1.  [notes](#org3255d6c)
-    2.  [\`~/.emacs\` configuration for org mode](#orgbdd8288)
-    3.  [Tips](#orgb16c1c3)
-        1.  [Insert a code block](#org3f06aa2)
+1.  [twitter](#org03392c3)
+    1.  [Find the most liked tweets from an account](#org7c52ae9)
+        1.  [@theshawwn's most favorited tweets](#org4b371db)
+2.  [org mode](#org1f4d9ab)
+    1.  [org mode notes](#orgbb6909d)
+    2.  [\`~/.emacs\` configuration for org mode](#orgc1b9479)
+    3.  [Tips](#orgb534710)
+        1.  [Insert a code block](#orgdfcb5cd)
 
 
-<a id="orgf68af1d"></a>
+<a id="org03392c3"></a>
 
 # twitter
 
 
-<a id="orge998b58"></a>
+<a id="org7c52ae9"></a>
 
 ## Find the most liked tweets from an account
 
 <https://webapps.stackexchange.com/questions/105958/find-the-most-liked-tweet-from-an-account>
 
 
-<a id="org3f6cb76"></a>
+<a id="org4b371db"></a>
 
 ### @theshawwn's most favorited tweets
 
 <https://twitter.com/search?q=from%3Atheshawwn%20min_faves%3A60&src=typed_query&f=live>
 
 
-<a id="org2ab0d9d"></a>
+<a id="org1f4d9ab"></a>
 
 # org mode
 
 
-<a id="org3255d6c"></a>
+<a id="orgbb6909d"></a>
 
-## notes
+## org mode notes
 
 -   Tutorial: <https://orgmode.org/worg/org-tutorials/org4beginners.html>
     -   Getting Things Done (GTD) workflow: <http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html>
 -   Auto-export on save: <https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/>
 
 
-<a id="orgbdd8288"></a>
+<a id="orgc1b9479"></a>
 
 ## \`~/.emacs\` configuration for org mode
 
@@ -78,12 +78,12 @@
     (add-hook 'org-mode-hook #'toggle-org-markdown-export-on-save)
 
 
-<a id="orgb16c1c3"></a>
+<a id="orgb534710"></a>
 
 ## Tips
 
 
-<a id="org3f06aa2"></a>
+<a id="orgdfcb5cd"></a>
 
 ### Insert a code block
 

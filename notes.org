@@ -5,7 +5,7 @@
     https://twitter.com/search?q=from%3Atheshawwn%20min_faves%3A60&src=typed_query&f=live
    
 * org mode
-** notes
+** org mode notes
 - Tutorial: https://orgmode.org/worg/org-tutorials/org4beginners.html
   - Getting Things Done (GTD) workflow: http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
 - Auto-export on save: https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/
