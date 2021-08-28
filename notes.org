@@ -1,3 +1,5 @@
+#+OPTIONS: H:10 timestamp:t
+
 * twitter
 ** Find the most liked tweets from an account
    https://webapps.stackexchange.com/questions/105958/find-the-most-liked-tweet-from-an-account
@@ -5,10 +7,8 @@
     https://twitter.com/search?q=from%3Atheshawwn%20min_faves%3A60&src=typed_query&f=live
    
 * org mode
-** org mode notes
-- Tutorial: https://orgmode.org/worg/org-tutorials/org4beginners.html
-  - Getting Things Done (GTD) workflow: http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
-- Auto-export on save: https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/
+** Org Mode Tutorial
+   https://orgmode.org/worg/org-tutorials/org4beginners.html
 ** `~/.emacs` configuration for org mode
    #+begin_src
 ;------------------------------------------------------------
@@ -39,10 +39,45 @@
 
 
 (add-hook 'org-mode-hook #'toggle-org-markdown-export-on-save)
+
+;; https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
+;; <s then TAB
+(require 'org-tempo)
    #+end_src
-** Tips
-*** Insert a code block
-    https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
 
     
  
+** Auto-export on save
+   https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/
+** Insert a code block
+   https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
+   #+begin_src
+(require 'org-tempo)
+;; then type <s followed by TAB
+   #+end_src
+** Insert Hyperlinks
+   https://orgmode.org/guide/Hyperlinks.html
+   #+begin_src
+[[example.com][Example]]
+   #+end_src
+** Getting Things Done (GTD) workflow
+    http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+** Export all headlines in ToC
+   Usually org-mode only exports up to 3 nestings deep. To export all headlines, no matter how deeply, add this to the top of the org file:
+   #+begin_src
+#+OPTIONS: H:10
+   #+end_src
+*** See also
+    - [[https://orgmode.org/manual/Export-Settings.html][Export Settings]]
+    - [[https://orgmode.org/manual/Markdown-Export.html][Markdown Export]]
+* misc
+** deeply
+   Deeply nested ToC test
+*** nested
+   Deeply nested ToC test
+**** deeply
+   Deeply nested ToC test
+***** nested
+   Deeply nested ToC test
+****** deeply
+   Deeply nested ToC test

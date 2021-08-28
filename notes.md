@@ -1,50 +1,59 @@
 
 # Table of Contents
 
-1.  [twitter](#org03392c3)
-    1.  [Find the most liked tweets from an account](#org7c52ae9)
-        1.  [@theshawwn's most favorited tweets](#org4b371db)
-2.  [org mode](#org1f4d9ab)
-    1.  [org mode notes](#orgbb6909d)
-    2.  [\`~/.emacs\` configuration for org mode](#orgc1b9479)
-    3.  [Tips](#orgb534710)
-        1.  [Insert a code block](#orgdfcb5cd)
+1.  [twitter](#org6597456)
+    1.  [Find the most liked tweets from an account](#orgee0f018)
+        1.  [@theshawwn's most favorited tweets](#orgc29b848)
+2.  [org mode](#org2277a22)
+    1.  [Org Mode Tutorial](#orgd26d20d)
+    2.  [\`~/.emacs\` configuration for org mode](#orgd7f4169)
+    3.  [Auto-export on save](#orgea8a5fc)
+    4.  [Insert a code block](#orgca98dea)
+    5.  [Insert Hyperlinks](#org679b2f5)
+    6.  [Getting Things Done (GTD) workflow](#org2cfa121)
+    7.  [Export all headlines in ToC](#orgbd39b0b)
+        1.  [See also](#orgab05fe7)
+3.  [misc](#orge1719c8)
+    1.  [deeply](#orgcb19e06)
+        1.  [nested](#org14dfc1c)
+            1.  [deeply](#org78ce44c)
+                1.  [nested](#org8b658e8)
+                    1.  [deeply](#orgeebe292)
 
 
-<a id="org03392c3"></a>
+
+<a id="org6597456"></a>
 
 # twitter
 
 
-<a id="org7c52ae9"></a>
+<a id="orgee0f018"></a>
 
 ## Find the most liked tweets from an account
 
 <https://webapps.stackexchange.com/questions/105958/find-the-most-liked-tweet-from-an-account>
 
 
-<a id="org4b371db"></a>
+<a id="orgc29b848"></a>
 
 ### @theshawwn's most favorited tweets
 
 <https://twitter.com/search?q=from%3Atheshawwn%20min_faves%3A60&src=typed_query&f=live>
 
 
-<a id="org1f4d9ab"></a>
+<a id="org2277a22"></a>
 
 # org mode
 
 
-<a id="orgbb6909d"></a>
+<a id="orgd26d20d"></a>
 
-## org mode notes
+## Org Mode Tutorial
 
--   Tutorial: <https://orgmode.org/worg/org-tutorials/org4beginners.html>
-    -   Getting Things Done (GTD) workflow: <http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html>
--   Auto-export on save: <https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/>
+<https://orgmode.org/worg/org-tutorials/org4beginners.html>
 
 
-<a id="orgc1b9479"></a>
+<a id="orgd7f4169"></a>
 
 ## \`~/.emacs\` configuration for org mode
 
@@ -76,16 +85,98 @@
     
     
     (add-hook 'org-mode-hook #'toggle-org-markdown-export-on-save)
+    
+    ;; https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
+    ;; <s then TAB
+    (require 'org-tempo)
 
 
-<a id="orgb534710"></a>
+<a id="orgea8a5fc"></a>
 
-## Tips
+## Auto-export on save
+
+<https://www.reddit.com/r/emacs/comments/4golh1/how_to_auto_export_html_when_saving_in_orgmode/>
 
 
-<a id="orgdfcb5cd"></a>
+<a id="orgca98dea"></a>
 
-### Insert a code block
+## Insert a code block
 
 <https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block>
+
+    (require 'org-tempo)
+    ;; then type <s followed by TAB
+
+
+<a id="org679b2f5"></a>
+
+## Insert Hyperlinks
+
+<https://orgmode.org/guide/Hyperlinks.html>
+
+    [[example.com][Example]]
+
+
+<a id="org2cfa121"></a>
+
+## Getting Things Done (GTD) workflow
+
+<http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html>
+
+
+<a id="orgbd39b0b"></a>
+
+## Export all headlines in ToC
+
+Usually org-mode only exports up to 3 nestings deep. To export all headlines, no matter how deeply, add this to the top of the org file:
+
+    #+OPTIONS: H:10
+
+
+<a id="orgab05fe7"></a>
+
+### See also
+
+-   [Export Settings](https://orgmode.org/manual/Export-Settings.html)
+-   [Markdown Export](https://orgmode.org/manual/Markdown-Export.html)
+
+
+<a id="orge1719c8"></a>
+
+# misc
+
+
+<a id="orgcb19e06"></a>
+
+## deeply
+
+Deeply nested ToC test
+
+
+<a id="org14dfc1c"></a>
+
+### nested
+
+Deeply nested ToC test
+
+
+<a id="org78ce44c"></a>
+
+#### deeply
+
+Deeply nested ToC test
+
+
+<a id="org8b658e8"></a>
+
+##### nested
+
+Deeply nested ToC test
+
+
+<a id="orgeebe292"></a>
+
+###### deeply
+
+Deeply nested ToC test
 
